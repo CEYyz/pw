@@ -7,4 +7,7 @@ while r < 3:
 		break
 	elif pw1 != password:
 		r = r + 1
-		print('try again only have', 3 - r,'time')
+		if r < 3:
+			print('try again only have', 3 - r,'time')
+		elif r == 3:
+			print('lock account')
